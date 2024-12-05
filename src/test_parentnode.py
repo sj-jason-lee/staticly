@@ -19,6 +19,7 @@ class TestParentNode(unittest.TestCase):
       "<p><b>Bold text</b>Normal text<i>italic text</i>Normal text</p>",
       node.to_html()
     )
+
   def test_to_html_with_children(self):
     child_node = LeafNode("span", "child")
     parent_node = ParentNode("div", [child_node])
